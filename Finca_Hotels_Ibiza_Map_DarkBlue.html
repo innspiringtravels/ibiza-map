@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dcc7c8d221b64565149d05bd1d32b3ef {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dcc7c8d221b64565149d05bd1d32b3ef" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dcc7c8d221b64565149d05bd1d32b3ef = L.map(
+                "map_dcc7c8d221b64565149d05bd1d32b3ef",
+                {
+                    center: [38.9807, 1.4085],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f20c90709875b36c9f61d99d69da7ff = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dcc7c8d221b64565149d05bd1d32b3ef);
+        
+    
+            var marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96 = L.markerClusterGroup(
+                {}
+            );
+            map_dcc7c8d221b64565149d05bd1d32b3ef.addLayer(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var marker_7b9f5803cdb2866fa2d8b4a2fbd5ef9d = L.marker(
+                [38.9589, 1.5004],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_01002032de4b9805d9f4bdf1062e99e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_7b9f5803cdb2866fa2d8b4a2fbd5ef9d.setIcon(icon_01002032de4b9805d9f4bdf1062e99e7);
+        
+    
+        var popup_756089f2ae49d8aa1788f4c378254f37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b7a06368a9a84c9f1dd3ab69875e49d = $(`<div id="html_3b7a06368a9a84c9f1dd3ab69875e49d" style="width: 100.0%; height: 100.0%;">Agroturismo Can Domo</div>`)[0];
+            popup_756089f2ae49d8aa1788f4c378254f37.setContent(html_3b7a06368a9a84c9f1dd3ab69875e49d);
+        
+
+        marker_7b9f5803cdb2866fa2d8b4a2fbd5ef9d.bindPopup(popup_756089f2ae49d8aa1788f4c378254f37)
+        ;
+
+        
+    
+    
+            var marker_ae31a5557fe9290377f2dd4edf06204b = L.marker(
+                [38.998, 1.4457],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_d6131b6e651b01e402a46a4036a7412c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_ae31a5557fe9290377f2dd4edf06204b.setIcon(icon_d6131b6e651b01e402a46a4036a7412c);
+        
+    
+        var popup_f2090b058f2f0174b5690341b76f5e24 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b2eaba37bbeb75d122c5ee3652144680 = $(`<div id="html_b2eaba37bbeb75d122c5ee3652144680" style="width: 100.0%; height: 100.0%;">Hotel Can Sastre</div>`)[0];
+            popup_f2090b058f2f0174b5690341b76f5e24.setContent(html_b2eaba37bbeb75d122c5ee3652144680);
+        
+
+        marker_ae31a5557fe9290377f2dd4edf06204b.bindPopup(popup_f2090b058f2f0174b5690341b76f5e24)
+        ;
+
+        
+    
+    
+            var marker_f6f8477f801370ce0ff842746719c6bd = L.marker(
+                [38.9748, 1.4941],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_dc399f0e3e721ae8768782a7cc482ba6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_f6f8477f801370ce0ff842746719c6bd.setIcon(icon_dc399f0e3e721ae8768782a7cc482ba6);
+        
+    
+        var popup_7102bde312c4e59be4e5116b24a0aa6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd97cb817bb49f1cc5430a2273cc0fc2 = $(`<div id="html_dd97cb817bb49f1cc5430a2273cc0fc2" style="width: 100.0%; height: 100.0%;">Finca Legado Ibiza - Adults Only</div>`)[0];
+            popup_7102bde312c4e59be4e5116b24a0aa6b.setContent(html_dd97cb817bb49f1cc5430a2273cc0fc2);
+        
+
+        marker_f6f8477f801370ce0ff842746719c6bd.bindPopup(popup_7102bde312c4e59be4e5116b24a0aa6b)
+        ;
+
+        
+    
+    
+            var marker_dc304762b5e60e1d70cd494955f2892f = L.marker(
+                [38.978, 1.3706],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_e55d5d7d596167f877f561553edeff65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_dc304762b5e60e1d70cd494955f2892f.setIcon(icon_e55d5d7d596167f877f561553edeff65);
+        
+    
+        var popup_703c9df75cf823835f7da77cb4b326f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf43492fbaf38d444d529ac6fd79ba3e = $(`<div id="html_bf43492fbaf38d444d529ac6fd79ba3e" style="width: 100.0%; height: 100.0%;">Finca Las Mariposas</div>`)[0];
+            popup_703c9df75cf823835f7da77cb4b326f6.setContent(html_bf43492fbaf38d444d529ac6fd79ba3e);
+        
+
+        marker_dc304762b5e60e1d70cd494955f2892f.bindPopup(popup_703c9df75cf823835f7da77cb4b326f6)
+        ;
+
+        
+    
+    
+            var marker_532b5dd359c07ba7d4c188f649d57f1e = L.marker(
+                [38.9645, 1.511],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_116a7d603e2ce77a018f9e29199e2e0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_532b5dd359c07ba7d4c188f649d57f1e.setIcon(icon_116a7d603e2ce77a018f9e29199e2e0b);
+        
+    
+        var popup_5aec0042e22a4e83c1d7bdf61a326370 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_840f7bdec73a090891e2feab7863f77b = $(`<div id="html_840f7bdec73a090891e2feab7863f77b" style="width: 100.0%; height: 100.0%;">Aguamadera</div>`)[0];
+            popup_5aec0042e22a4e83c1d7bdf61a326370.setContent(html_840f7bdec73a090891e2feab7863f77b);
+        
+
+        marker_532b5dd359c07ba7d4c188f649d57f1e.bindPopup(popup_5aec0042e22a4e83c1d7bdf61a326370)
+        ;
+
+        
+    
+    
+            var marker_e4443f97fb723a5253aa37b997aa84f8 = L.marker(
+                [39.0195, 1.4806],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_4ecc2c6470e22028653b3a967c5b8903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_e4443f97fb723a5253aa37b997aa84f8.setIcon(icon_4ecc2c6470e22028653b3a967c5b8903);
+        
+    
+        var popup_b1ebc34bad90e68c1d616c315cdf6f5a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de069f54f2be1ed5908b4d0cceaacfdb = $(`<div id="html_de069f54f2be1ed5908b4d0cceaacfdb" style="width: 100.0%; height: 100.0%;">Can Quince Balafia Finca Hotel Ibiza</div>`)[0];
+            popup_b1ebc34bad90e68c1d616c315cdf6f5a.setContent(html_de069f54f2be1ed5908b4d0cceaacfdb);
+        
+
+        marker_e4443f97fb723a5253aa37b997aa84f8.bindPopup(popup_b1ebc34bad90e68c1d616c315cdf6f5a)
+        ;
+
+        
+    
+    
+            var marker_022e8eb5b1b846eed0f3042c8a6f7b42 = L.marker(
+                [38.9185, 1.4194],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_9b589be0987ea237c243f8dc62d7f061 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_022e8eb5b1b846eed0f3042c8a6f7b42.setIcon(icon_9b589be0987ea237c243f8dc62d7f061);
+        
+    
+        var popup_04b87bc50aa86b009950b7e4fe65f592 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ed7b22ec4999bc4ccbf18a1f1af5b3cc = $(`<div id="html_ed7b22ec4999bc4ccbf18a1f1af5b3cc" style="width: 100.0%; height: 100.0%;">Casa Maca</div>`)[0];
+            popup_04b87bc50aa86b009950b7e4fe65f592.setContent(html_ed7b22ec4999bc4ccbf18a1f1af5b3cc);
+        
+
+        marker_022e8eb5b1b846eed0f3042c8a6f7b42.bindPopup(popup_04b87bc50aa86b009950b7e4fe65f592)
+        ;
+
+        
+    
+    
+            var marker_4ed726693dc049df960b5147ae61085c = L.marker(
+                [39.0482, 1.4413],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_73421db2edd4c8656a6b464e0ad49d59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4ed726693dc049df960b5147ae61085c.setIcon(icon_73421db2edd4c8656a6b464e0ad49d59);
+        
+    
+        var popup_caec0480632e305dba86e393336039a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b981eac4d3ba78c1f692c195f8d97342 = $(`<div id="html_b981eac4d3ba78c1f692c195f8d97342" style="width: 100.0%; height: 100.0%;">Agroturismo Can Pardal</div>`)[0];
+            popup_caec0480632e305dba86e393336039a5.setContent(html_b981eac4d3ba78c1f692c195f8d97342);
+        
+
+        marker_4ed726693dc049df960b5147ae61085c.bindPopup(popup_caec0480632e305dba86e393336039a5)
+        ;
+
+        
+    
+    
+            var marker_6ccde55038b64be91a71b47e3715166c = L.marker(
+                [39.0285, 1.4541],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_1fd2a4bd398e54c496619a665fd18163 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6ccde55038b64be91a71b47e3715166c.setIcon(icon_1fd2a4bd398e54c496619a665fd18163);
+        
+    
+        var popup_c09fda8933376a1983af1ec21d7cf1d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8200ff10d1c428da08308f13d3818b0c = $(`<div id="html_8200ff10d1c428da08308f13d3818b0c" style="width: 100.0%; height: 100.0%;">Ca Na Xica - Hotel & Spa</div>`)[0];
+            popup_c09fda8933376a1983af1ec21d7cf1d2.setContent(html_8200ff10d1c428da08308f13d3818b0c);
+        
+
+        marker_6ccde55038b64be91a71b47e3715166c.bindPopup(popup_c09fda8933376a1983af1ec21d7cf1d2)
+        ;
+
+        
+    
+    
+            var marker_8349fca273cc84bfbce823258a00be03 = L.marker(
+                [38.9614, 1.5212],
+                {}
+            ).addTo(marker_cluster_2e6af6ac2daf66016b3038f3a10e7f96);
+        
+    
+            var icon_714b8d75410fc0901680a0d7bf75f579 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_8349fca273cc84bfbce823258a00be03.setIcon(icon_714b8d75410fc0901680a0d7bf75f579);
+        
+    
+        var popup_340c4427b728a79fd665eac3a7aae6a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51ee7c4b46f13e93ec90d2dce118c384 = $(`<div id="html_51ee7c4b46f13e93ec90d2dce118c384" style="width: 100.0%; height: 100.0%;">La Finca Agroturismo Can Bet</div>`)[0];
+            popup_340c4427b728a79fd665eac3a7aae6a9.setContent(html_51ee7c4b46f13e93ec90d2dce118c384);
+        
+
+        marker_8349fca273cc84bfbce823258a00be03.bindPopup(popup_340c4427b728a79fd665eac3a7aae6a9)
+        ;
+
+        
+    
+</script>
+</html>
